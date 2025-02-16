@@ -1,10 +1,12 @@
 "use client";
 
-import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
+import type { ReactNode } from 'react';
 import { useRef } from "react";
+import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
+
 
 interface BlurFadeProps {
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
   variant?: {
     hidden: { y: number };
@@ -14,9 +16,20 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string;
+  inViewMargin?: string | number | { top?: number | string; right?: number | string; bottom?: number | string; left?: number | string };
   blur?: string;
 }
+//helper function
+const convertMarginToString = (
+  margin: string | number | { top?: number | string; right?: number | string; bottom?: number | string; left?: number | string }
+): string => {
+  if (typeof margin === "string" || typeof margin === "number") {
+    return margin.toString();
+  }
+  const { top = 0, right = 0, bottom = 0, left = 0 } = margin;
+  return `${top}px ${right}px ${bottom}px ${left}px`;
+};
+
 const BlurFade = ({
   children,
   className,
@@ -28,14 +41,19 @@ const BlurFade = ({
   inViewMargin = "-50px",
   blur = "6px",
 }: BlurFadeProps) => {
-  const ref = useRef(null);
-  const inViewResult = useInView(ref, { once: true, margin: inViewMargin });
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Convert the inViewMargin to a string.
+  const marginString = convertMarginToString(inViewMargin);
+
+  const inViewResult = useInView(ref, { once: true, margin: marginString as any });
   const isInView = !inView || inViewResult;
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
     visible: { y: -yOffset, opacity: 1, filter: `blur(0px)` },
   };
   const combinedVariants = variant || defaultVariants;
+
   return (
     <AnimatePresence>
       <motion.div

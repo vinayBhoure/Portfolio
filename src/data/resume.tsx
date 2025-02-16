@@ -4,24 +4,36 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Vinay Bhoure",
   initials: "VB",
-  url: "https://vinaybhoure.me",
+  url: "https://www.github.com/vinayBhoure",
   location: "Indore, Madhya Pradesh, India",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  locationLink: "https://www.google.com/maps/place/indore",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Final year student trying to be Software Engineer. I love building things and helping people. Very active on Twitter.",
   summary:
     "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/me.jpg",
   skills: [
+    // Frontned
     "React Js",
     "Tailwind CSS",
+    "Redux Toolkit",
+
+    //Backend
     "Node Js",
     "Express Js",
     "Socket Io",
+
+    // Databases
     "Mongo DB",
     "PostgreSQL",
+
+    // DevOps & Tools 
     "Git & Github",
+
+    // UX/UI
     "Figma",
+
+    // Programming Languages
     "C++",
     "Typescript",
     "Javascript",
@@ -62,6 +74,12 @@ export const DATA = {
         icon: Icons.youtube,
         navbar: true,
       },
+      Instagram: {
+        name: "Instagram",
+        url: "https://dub.sh/dillion-youtube",
+        icon: Icons.youtube,
+        navbar: true,
+      },
       email: {
         name: "Send Email",
         url: "#",
@@ -74,7 +92,7 @@ export const DATA = {
 
   work: [
     {
-      company: "Self-Employed",
+      company: "Freelancer",
       href: "https://atomic.finance",
       badges: [],
       location: "Remote",
@@ -103,7 +121,7 @@ export const DATA = {
       school: "Maulana Azad National Institute of Technology",
       href: "https://manit.ac.in",
       degree: "B.Tech in Computer Science and Engineering",
-      logoUrl: "/buildspace.jpg",
+      logoUrl: "/manit.png",
       start: "2021",
       end: "2025",
     },
@@ -125,24 +143,23 @@ export const DATA = {
       description:
         "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "React Js",
+        "Tailwind CSS",
+        "Node Js",
+        "Express Js",
+        "Socket Io",
+        "Mongo DB",
+        "OAuth"
       ],
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://github.com/vinayBhoure/EasyRides",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source Code",
-          href: "https://chatcollect.com",
+          href: "https://github.com/vinayBhoure/EasyRides",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -172,12 +189,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://alonzoclothing.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source Code",
-          href: "https://chatcollect.com",
+          href: "https://github.com/vinayBhoure/MERN-Placement",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -188,15 +205,74 @@ export const DATA = {
   ],
   hackathons: [
     {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
+      title: "Master Server",
+      dates: "February 14, 2025 - Present",
+      location: "Learning",
       description:
         "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
       image:
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
     },
+    {
+      title: "ChotiLink",
+      dates: "February 14, 2025 - Present",
+      location: "Indore",
+      description:
+        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+      links: [],
+    },
+    {
+      title: "Gitbox",
+      dates: "February 14, 2025 - Present",
+      location: "Indore",
+      description:
+        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+      links: [],
+    },
+    {
+      title: "Slack Clone",
+      dates: "February 14, 2025 - Present",
+      location: "Indore",
+      description:
+        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+      links: [],
+    },
+    {
+      title: "Taskify - MERN",
+      dates: "February 14, 2025 - Present",
+      location: "Indore",
+      description:
+        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+      links: [],
+    },
+    {
+      title: "Arabian Ark - Clone",
+      dates: "February 14, 2025 - Present",
+      location: "Client Work",
+      description:
+        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+      links: [],
+    },
+    {
+      title: "Aman Events Bhopal",
+      dates: "February 14, 2025 - Present",
+      location: "Client Work",
+      description:
+        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+      links: [],
+    }
   ],
 } as const;
