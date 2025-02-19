@@ -1,47 +1,188 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# Portfolio Website
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS. Features smooth animations, dark mode support, and a clean, professional design.
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+## 🚀 Live Demo
+[View Live Demo](https://vinaybhoure.vercel.app/)
 
-# Features
+## ✨ Features
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+- Responsive design
+- Dark mode support
+- Page transitions and animations
+- Project showcase
+- Blog/Articles section
+- Contact form
+- SEO optimized
+- Type-safe code with TypeScript
+- Tailwind CSS for styling
 
-# Getting Started Locally
+## 🛠️ Tech Stack
 
-1. Clone this repository to your local machine:
+- Next.js 15
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Icons
+- Lucide React
+- Shadcn/UI Components
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+## 📦 Installation & Setup
 
-2. Move to the cloned directory
+### Prerequisites
+- Node.js 18+ installed
+- pnpm package manager installed (`npm install -g pnpm`)
+- Git installed on your system
+- A GitHub account
+- A Vercel account (for deployment)
 
-   ```bash
-   cd portfolio
-   ```
+### Step 1: Clone the Repository
 
-3. Install dependencies:
+```bash
+# Clone the repository
+git clone https://github.com/vinayBhoure/Portfolio.git
 
-   ```bash
-   pnpm install
-   ```
+# Navigate to the project directory
+cd portfolio
+```
 
-4. Start the local Server:
+### Step 2: Install Dependencies
 
-   ```bash
-   pnpm dev
-   ```
+```bash
+# Install pnpm if you haven't already
+npm install -g pnpm
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+# Install project dependencies
+pnpm install
+```
 
-# License
+### Step 3: Set Up Environment Variables
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+Create a `.env.local` file in the root directory and add any necessary environment variables:
+
+```env
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+# Add other environment variables if needed
+```
+
+### Step 4: Run Development Server
+
+```bash
+# Start the development server
+pnpm dev
+
+# The site should now be running at http://localhost:3000
+```
+
+## 🔧 Project Structure
+
+```
+portfolio/
+├── public/          # Static files
+├── src/
+│   ├── app/         # App router pages
+│   ├── components/  # React components
+│   ├── lib/         # Utility functions
+│   ├── styles/      # Global styles
+│   └── types/       # TypeScript types
+├── content/         # Blog posts and project data
+├── tailwind.config.js
+└── next.config.js
+```
+
+## 🚀 Deployment on Vercel
+
+1. Create a Vercel account at [vercel.com](https://vercel.com) if you haven't already
+
+2. Install Vercel CLI:
+```bash
+pnpm install -g vercel
+```
+
+3. Push your code to GitHub:
+```bash
+git add .
+git commit -m "Ready for deployment"
+git push
+```
+
+4. Deploy to Vercel:
+
+Method 1: Using Vercel CLI
+```bash
+# Login to Vercel
+vercel login
+
+# Deploy
+vercel
+```
+
+Method 2: Using Vercel Dashboard
+- Go to [vercel.com/dashboard](https://vercel.com/dashboard)
+- Click "New Project"
+- Import your GitHub repository
+- Configure your project settings
+- Click "Deploy"
+
+### Environment Variables on Vercel
+1. Go to your project on Vercel Dashboard
+2. Navigate to Settings > Environment Variables
+3. Add the same variables from your `.env.local` file
+
+## 🔄 Updating the Project
+
+To update your deployed project:
+```bash
+# Pull latest changes
+git pull
+
+# Install any new dependencies
+pnpm install
+
+# Push your changes
+git push
+```
+
+Vercel will automatically rebuild and redeploy your site when you push to the main branch.
+
+## 🐛 Troubleshooting
+
+### Common Issues and Solutions
+
+1. **Dependency Issues**
+```bash
+# Clear pnpm cache
+pnpm store prune
+
+# Remove node_modules and reinstall
+rm -rf node_modules
+rm -rf .next
+pnpm install
+```
+
+2. **Build Errors**
+```bash
+# Clear Next.js cache
+rm -rf .next
+pnpm build
+```
+
+3. **Type Errors**
+```bash
+# Check types
+pnpm type-check
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📧 Contact
+
+Your Name - [bhoure25@gmail.com](mailto:bhoure25@gmail.com)
+
+Project Link: [https://github.com/vinayBhoure/Portfolio](https://github.com/vinayBhoure/Portfolio)

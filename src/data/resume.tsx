@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Final year student trying to be Software Engineer. I love building things and helping people. Very active on Twitter.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "I'm a final year B.Tech student at MANIT Bhopal, specializing in Computer Science Engineering. With experience in both frontend and backend development, I've worked on projects ranging from cab booking systems to e-commerce platforms. My technical journey includes an internship at CodeSmith Dev where I engineered scalable APIs using Golang and PostgreSQL.",
   avatarUrl: "/me.jpg",
   skills: [
     // Frontned
@@ -41,7 +41,6 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/project", icon: NotebookIcon, label: "Projects" },
   ],
   contact: {
     email: "vinaybhoure@gmail.com",
@@ -51,7 +50,6 @@ export const DATA = {
         name: "GitHub",
         url: "https://www.github.com/vinayBhoure",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
@@ -65,19 +63,12 @@ export const DATA = {
         name: "X",
         url: "https://www.x.com/vinaybhoure_",
         icon: Icons.x,
-
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
         navbar: true,
       },
       Instagram: {
         name: "Instagram",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
+        url: "https://www.instagram.com/why.viinay/",
+        icon: Icons.instagram,
         navbar: true,
       },
       email: {
@@ -113,7 +104,7 @@ export const DATA = {
       start: "Oct 2023",
       end: "Nov 2022",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Built scalable APIs with Golang and SQLC, ensuring smooth CRUD operations and efficient database interactions. Designed and developed these APIs from scratch, gaining valuable experience in optimizing backend performance and reliability.",
     },
   ],
   education: [
@@ -141,7 +132,7 @@ export const DATA = {
       dates: "Feb 2025 - Present",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Built a cab booking app with real-time tracking and communication using Socket.io. Learned scalable architecture and real-time data handling, boosting my full-stack development skills.",
       technologies: [
         "React Js",
         "Tailwind CSS",
@@ -174,7 +165,7 @@ export const DATA = {
       dates: "June 2024 - July 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "[Alonzo Clothing - Under Development](https://alonzoclothing.vercel.app/) | Built a responsive e-commerce site with an admin dashboard, payment integration, and caching for better performance.预计 30% engagement boost.",
       technologies: [
         "Typescript",
         "React JS",
