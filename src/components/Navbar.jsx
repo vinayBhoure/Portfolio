@@ -20,7 +20,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="sticky top-0 z-100 bg-[rgba(10,10,10,0.8)] backdrop-blur-md border-b border-border h-16 flex items-center">
+        <nav className="sticky  top-0 z-100 bg-[rgba(10,10,10,0.8)] backdrop-blur-md border-b border-border h-16 flex items-center">
             <div className="container flex justify-between items-center w-full relative">
                 <Link to="/" className="text-xl font-bold tracking-tighter hover:opacity-80 transition-opacity">
                     {heroData.shortName}
@@ -33,10 +33,10 @@ const Navbar = () => {
                             <Link
                                 to={link.path}
                                 className={`text-sm font-medium transition-colors ${link.isAccent
-                                        ? 'text-accent hover:opacity-80'
-                                        : isActive(link.path)
-                                            ? 'text-fg'
-                                            : 'text-muted hover:text-fg'
+                                    ? 'text-accent hover:opacity-80'
+                                    : isActive(link.path)
+                                        ? 'text-fg'
+                                        : 'text-muted hover:text-fg'
                                     }`}
                             >
                                 {link.name}
@@ -62,10 +62,10 @@ const Navbar = () => {
                                 key={link.name}
                                 to={link.path}
                                 className={`text-lg font-medium ${link.isAccent
-                                        ? 'text-accent'
-                                        : isActive(link.path)
-                                            ? 'text-fg'
-                                            : 'text-muted'
+                                    ? 'text-accent'
+                                    : isActive(link.path)
+                                        ? 'text-fg'
+                                        : 'text-muted'
                                     }`}
                                 onClick={() => setIsOpen(false)}
                             >
