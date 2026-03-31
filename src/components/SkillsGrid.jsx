@@ -13,7 +13,7 @@ const SkillsGrid = () => {
                 {skillsData.map((skill, index) => (
                     <span
                         key={index}
-                        className="px-5 py-2.5 bg-card-bg border border-border rounded-full text-sm text-muted relative overflow-hidden group hover:text-fg transition-colors animate-fade-in"
+                        className="px-4 py-1.5 bg-card-bg border border-border rounded-lg text-sm text-muted relative overflow-hidden group hover:text-fg transition-colors animate-fade-in"
                         style={{ animationDelay: `${index * 0.05}s` }}
                     >
                         {skill}

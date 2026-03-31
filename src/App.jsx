@@ -29,7 +29,7 @@ const ScrollToTop = () => {
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-bg text-fg">
+      <div className="min-h-screen  bg-bg text-fg">
         <ScrollToTop />
         <Navbar />
         <main className="container min-h-[calc(100vh-160px)]">

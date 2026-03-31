@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <footer className="py-16 border-t border-border text-center">
-            <div className="container">
+            <div className="container ">
                 <p className="italic text-muted max-w-[600px] mx-auto mb-8 text-lg font-serif">
                     {aboutData.footerQuote}
                 </p>
